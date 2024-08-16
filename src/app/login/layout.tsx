@@ -5,7 +5,6 @@ export default function Layout({
     children
 }) {
     const currentPath = usePathname();
-    console.log(currentPath)
     return (
         <div>
             {
