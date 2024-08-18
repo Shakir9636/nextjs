@@ -2,6 +2,7 @@
 import { useEffect ,useState } from "react"
 import custom from "./custom.module.css"
 import Image from "next/image"
+import Public from "../../../public/vercel.svg"
 
 export default function productList (){
     const [product,setProduct] = useState([])
@@ -15,6 +16,7 @@ export default function productList (){
     },[])
     return(
         <div>
+            <Image src={Public} />
             <h1 className={custom.main}>Fetch data with api client component</h1>
             {
                 product.map((item)=>(
