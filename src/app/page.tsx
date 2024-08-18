@@ -15,9 +15,18 @@ export default function Home() {
     console.log(name)
   }
   return (
-    <main className={styles.main}>
+    <main >
       <h1>Event, function and state {name} </h1>
+      <br />
       <Link href='/login'>Go to Login</Link>
+      <br />
+      <br />
+      <Link href='/productList'>Go to client Side Product List</Link>
+      <br />
+      <br />
+      <Link href='/serverSideProductList'>Go to Server Side Product List</Link>
+      <br />
+      <br />
       <button onClick={()=>navigate('/about')}>go to about</button>
     </main>
   );
