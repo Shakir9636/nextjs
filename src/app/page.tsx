@@ -27,9 +27,6 @@ export default function Home() {
       <Link href='/serverSideProductList'>Go to Server Side Product List</Link>
       <br />
       <br />
-      <Link href='/imageOptimize'>Go to Image optimize</Link>
-      <br />
-      <br />
       <button onClick={()=>navigate('/about')}>go to about</button>
     </main>
   );
