@@ -4,10 +4,16 @@ async function productList() {
     return data.products
 }
 import ProductBtn from "./productBtn";
+import { Roboto } from "next/font/google"
+const roboto = Roboto({
+    weight:'100',
+    subsets:['latin'],
+    display:'swap'
+})
 export default async function page() {
     let products = await productList();
     return (
-        <div>
+        <div className={roboto.className}>
             <h1>Fetch data with api server component</h1>
             {
                 products.map((item)=>(
